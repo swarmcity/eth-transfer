@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="eth-transfer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `eth-transfer`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class EthTransfer extends Polymer.Element {
+      static get is() { return 'eth-transfer'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'eth-transfer'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(EthTransfer.is, EthTransfer);
+  </script>
+</dom-module>
